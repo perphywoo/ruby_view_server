@@ -12,6 +12,6 @@ trap 'INT' do server.shutdown end
 
 ## Start the server
 server.mount_proc '/' do |req, res|
-    res.body = 'Hello, toilet lovers!'
+    res.body = 'Hello, toilet lovers!!'
   end
 server.start

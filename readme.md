@@ -225,7 +225,7 @@ Forms have [many different field types](http://www.w3schools.com/html/html_forms
 
 In this section we will add a simple text box and button asking visitors to enter their name we can then pull that data from the "request" object from the server and render a message to the user.
 
-Since we're building the html from the server we have access to the request (req) local variable inside of our erb. If you look at the class of the req object you'll see it is a WEBrick::HTTPRequest, and if you search for WEBrick::HTTPRequest docs you will find the [WEBrick::HTTPRequest documentationn](http://www.ruby-doc.org/stdlib-1.9.3/libdoc/webrick/rdoc/WEBrick/HTTPRequest.html). Here we see that if we call `query` on this object wee will get the query returned as a hash. In your layout add this somewhere:
+Since we're building the html from the server we have access to the request (req) local variable inside of our erb. If you look at the class of the req object you'll see it is a WEBrick::HTTPRequest, and if you search for WEBrick::HTTPRequest docs you will find the [WEBrick::HTTPRequest documentation](http://www.ruby-doc.org/stdlib-1.9.3/libdoc/webrick/rdoc/WEBrick/HTTPRequest.html). Here we see that if we call `query` on this object we will get the query returned as a hash. In your layout add this somewhere:
 
         <%= @request.query.inspect %>
 
@@ -277,4 +277,3 @@ What did we just do? We started off turning erb (the ruby code) into html. We mo
 You are an incredible person. Way to go! Understanding how to manipulate views in the context of a server is a large part of what Rails developers do every day.
 
 Don't forget to push your changes back to your fork.
-
